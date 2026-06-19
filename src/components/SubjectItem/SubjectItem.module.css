@@ -1,0 +1,41 @@
+.subject {
+  display: flex;
+  align-items: center;
+  column-gap: var(--spacing-200);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+#html {
+  background-color: var(--orange-50);
+}
+
+#css {
+  background-color: var(--green-50);
+}
+
+#javascript {
+  background-color: var(--blue-50);
+}
+
+#accessibility {
+  background-color: var(--purple-100);
+}
+
+@media (min-width: 768px) {
+  .subject {
+    column-gap: var(--spacing-400);
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+}

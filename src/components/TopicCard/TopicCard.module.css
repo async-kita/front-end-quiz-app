@@ -1,0 +1,33 @@
+.button {
+  width: 100%;
+  padding: var(--spacing-200);
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-color);
+  background-color: var(--button-background);
+  border: 3px solid var(--button-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    border-color: var(--purple-600);
+  }
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 28px;
+    border-radius: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button {
+    padding: var(--spacing-300);
+  }
+}
