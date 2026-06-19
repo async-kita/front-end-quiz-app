@@ -1,0 +1,62 @@
+:root {
+  /*  Colors*/
+  --white: #ffffff;
+  --black: #000000;
+  --gray-50: #f4f6fa;
+  --gray-500: #626c7f;
+  --blue-50: #ebf0ff;
+  --blue-100: #edf1f9;
+  --blue-300: #abc1e1;
+  --blue-500: #306aff;
+  --blue-850: #3b4d66;
+  --blue-900: #313e51;
+  --blue-950: #2d3949;
+  --green-50: #e0fdef;
+  --green-500: #2fd887;
+  --purple-100: #f6e7ff;
+  --purple-600: #a729f5;
+  --orange-50: #fff5ed;
+  --orange-400: #ff7e35;
+  --red-500: #ee5454;
+
+  /*Theme Light*/
+  --background: var(--gray-50);
+  --text-color: var(--blue-900);
+  --text-additional: var(--gray-500);
+  --button-background: var(--white);
+  --outline: var(--purple-600);
+
+  /*Fonts*/
+  --font-family: 'Rubik', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /*  Spacing*/
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1600: 128px;
+  --spacing-1800: 144px;
+  --spacing-2300: 184px;
+
+  /*  Container*/
+  --container-width: 640px;
+  --container-padding-x: var(--spacing-300);
+
+  @media (min-width: 1024px) {
+    --container-width: 1160px;
+  }
+}
+
+body.dark {
+  --background: var(--blue-900);
+  --text-color: var(--white);
+  --text-additional: var(--blue-300);
+  --button-background: var(--blue-850);
+  --outline: var(--white);
+}
