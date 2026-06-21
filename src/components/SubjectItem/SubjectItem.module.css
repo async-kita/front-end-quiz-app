@@ -11,6 +11,12 @@
   border-radius: 6px;
 }
 
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}
+
 #html {
   background-color: var(--orange-50);
 }
@@ -37,5 +43,9 @@
     height: 56px;
     padding: 8px;
     border-radius: 12px;
+  }
+
+  .title {
+    font-size: 28px;
   }
 }

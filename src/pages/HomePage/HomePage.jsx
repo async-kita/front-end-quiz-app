@@ -1,7 +1,7 @@
 import styles from './HomePage.module.css';
 import TopicCard from '../../components/TopicCard/TopicCard.jsx';
 
-function HomePage({ quizzes }) {
+function HomePage({ quizzes, onClickTopic }) {
   return (
     <section className={styles.home}>
       <div className={`${styles.inner} container`}>
@@ -15,7 +15,17 @@ function HomePage({ quizzes }) {
         </div>
         <ul className={styles.list}>
           {quizzes.map((quiz, index) => {
-            return <li key={index}>{<TopicCard title={quiz.title} iconUrl={quiz.icon} />}</li>;
+            return (
+              <li key={index}>
+                {
+                  <TopicCard
+                    title={quiz.title}
+                    iconUrl={quiz.icon}
+                    onClick={() => onClickTopic(quiz)}
+                  />
+                }
+              </li>
+            );
           })}
         </ul>
       </div>

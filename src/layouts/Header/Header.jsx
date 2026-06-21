@@ -3,12 +3,19 @@ import moon from '../../assets/images/icon-moon-light.svg';
 import moonDark from '../../assets/images/icon-moon-dark.svg';
 import sun from '../../assets/images/icon-sun-light.svg';
 import sunDark from '../../assets/images/icon-sun-dark.svg';
+import SubjectItem from '../../components/SubjectItem/SubjectItem.jsx';
 
-function Header({ currentTheme, onClickButtonTheme }) {
+function Header({ currentTheme, onClickButtonTheme, selectTopic }) {
   return (
     <header className={styles.header}>
       <div className={`${styles.headerInner} container`}>
-        <div className={styles.logo}></div>
+        <div className={styles.logo}>
+          {selectTopic !== null ? (
+            <SubjectItem title={selectTopic.title} iconUrl={selectTopic.icon} />
+          ) : (
+            <></>
+          )}
+        </div>
         <div className={styles.actions}>
           <img
             className={styles.icon}

@@ -1,0 +1,112 @@
+.quiz {
+  padding-top: 32px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-500);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-300);
+}
+
+.number {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: var(--text-additional);
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  height: 16px;
+  width: 100%;
+  background-color: var(--button-background);
+  border-radius: 999px;
+}
+
+.progress {
+  display: inline-block;
+  height: 8px;
+  width: 10%;
+  background-color: var(--purple-600);
+  border-radius: 999px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-200);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-200);
+  list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .body {
+    row-gap: var(--spacing-500);
+  }
+
+  .bodyInner {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-300);
+  }
+
+  .number {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .actions {
+    row-gap: var(--spacing-400);
+  }
+
+  .list {
+    row-gap: var(--spacing-300);
+  }
+}
+
+@media (min-width: 1024px) {
+  .quiz {
+    padding-top: 85px;
+  }
+
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 1rem;
+  }
+
+  .body {
+    max-width: 465px;
+    width: 100%;
+    row-gap: var(--spacing-2300);
+  }
+
+  .list {
+    row-gap: var(--spacing-200);
+  }
+}

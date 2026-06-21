@@ -10,6 +10,8 @@
 
 .logo {
   min-height: var(--spacing-500);
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .actions {
