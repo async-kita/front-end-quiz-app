@@ -5,17 +5,21 @@ import sun from '../../assets/images/icon-sun-light.svg';
 import sunDark from '../../assets/images/icon-sun-dark.svg';
 import SubjectItem from '../../components/SubjectItem/SubjectItem.jsx';
 
-function Header({ currentTheme, onClickButtonTheme, selectTopic }) {
+function Header({ currentTheme, onClickButtonTheme, selectTopic, reset }) {
+  const onClickLogo = () => {
+    reset();
+  };
+
   return (
     <header className={styles.header}>
       <div className={`${styles.headerInner} container`}>
-        <div className={styles.logo}>
+        <button className={styles.logo} type={'button'} onClick={() => onClickLogo()}>
           {selectTopic !== null ? (
             <SubjectItem title={selectTopic.title} iconUrl={selectTopic.icon} />
           ) : (
             <></>
           )}
-        </div>
+        </button>
         <div className={styles.actions}>
           <img
             className={styles.icon}

@@ -53,13 +53,6 @@ function QuizPage({ options, reset }) {
   };
 
   const handlePlayAgain = () => {
-    setCurrentIndex(0);
-    setSelectedAnswer(null);
-    setIsSubmit(false);
-    setError(null);
-    setIsCorrected(null);
-    setIsError(null);
-    setScore(0);
     reset();
   };
 

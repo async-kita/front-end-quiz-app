@@ -24,6 +24,7 @@ function App() {
         currentTheme={theme}
         onClickButtonTheme={toggleTheme}
         selectTopic={selectedTopic}
+        reset={resetTopic}
       ></Header>
       <main>
         {selectedTopic === null ? (

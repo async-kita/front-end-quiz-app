@@ -10,8 +10,16 @@
 
 .logo {
   min-height: var(--spacing-500);
+  font-family: var(--font-family);
   text-decoration: none;
   color: var(--text-color);
+  background: none;
+  border: none;
+}
+
+.logo:focus-visible {
+  outline: 3px dashed var(--purple-600);
+  outline-offset: 4px;
 }
 
 .actions {
