@@ -34,6 +34,11 @@
   border-radius: 999px;
 }
 
+.button:focus-visible {
+  outline: 3px dashed var(--purple-600);
+  outline-offset: 4px;
+}
+
 .button::before {
   content: '';
   position: absolute;

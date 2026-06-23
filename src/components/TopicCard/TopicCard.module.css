@@ -13,6 +13,11 @@
   transition: border-color 0.2s;
 }
 
+.button:focus-visible {
+  outline: 3px dashed var(--purple-600);
+  outline-offset: 4px;
+}
+
 @media (hover: hover) {
   .button:hover {
     border-color: var(--purple-600);

@@ -14,7 +14,10 @@ function App() {
     setSelectedTopic(topic);
   };
 
-  console.log(selectedTopic);
+  const resetTopic = () => {
+    setSelectedTopic(null);
+  };
+
   return (
     <>
       <Header
@@ -26,7 +29,7 @@ function App() {
         {selectedTopic === null ? (
           <HomePage quizzes={quizzes} onClickTopic={onClickTopic} />
         ) : (
-          <QuizPage options={selectedTopic} />
+          <QuizPage options={selectedTopic} reset={resetTopic} />
         )}
       </main>
     </>

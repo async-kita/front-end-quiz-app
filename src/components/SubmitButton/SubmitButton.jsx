@@ -1,9 +1,9 @@
 import styles from './SubmitButton.module.css';
 
-function SubmitButton() {
+function SubmitButton({ error, handleSubmit, isSubmit }) {
   return (
-    <button className={styles.button} type="submit">
-      Submit Answer
+    <button className={styles.button} type="submit" disabled={error} onClick={() => handleSubmit()}>
+      {isSubmit ? 'Next Question' : 'Submit Answer'}
     </button>
   );
 }
